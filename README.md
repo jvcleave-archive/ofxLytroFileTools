@@ -3,6 +3,7 @@ ofxLytroFileTools
 
 Tools to parse and view the Lytro camera (http://www.lytro.com/)  files in openFrameworks
 
+
 REQUIRES:
 openFrameworks 0071 http://www.openframeworks.cc/
 
@@ -12,6 +13,7 @@ Xcode 3.2.6
 
 MISC:
 Based off of lfptools (Thanks!) https://github.com/Sittro/lfptools
+sample video http://vimeo.com/jvcleave/ofxlytrofiletools
 
 
 TODO:
