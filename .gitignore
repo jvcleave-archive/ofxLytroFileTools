@@ -1,0 +1,10 @@
+build
+*.app
+IMG_*.jpg
+IMG_*_depth.txt
+IMG_*_imageRef0.raw
+IMG_*_metadataRef0.txt
+IMG_*_privateMetadataRef1.txt
+IMG_*_table.txt
+*.mode1v3
+*.pbxuser
