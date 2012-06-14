@@ -37,6 +37,11 @@ ofxLytroFileTools::ofxLytroFileTools()
 void ofxLytroFileTools::splitFile(ofFile file)
 {
 	fileName  = file.getBaseName();
+	if (ofIsStringInString(fileName, "-stk")) {
+		vector<string> parts = ofSplitString(fileName, "-stk");
+		fileName = parts[0];
+		cout << "fileName: " << fileName << endl;
+	}
 	//string fullPathToLFPFile = ofToDataPath(fileName + ".lfp", true);
 	//string fullPathToSTKFile = ofToDataPath(fileName + "-stk.lfp", true);
 	process(file.getAbsolutePath());
