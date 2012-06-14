@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxLytroFileTools.h"
 #include "ofxLytroFileViewer.h"
+#include "ofxLytroLibraryParser.h"
 
 class testApp : public ofBaseApp{
 	public:
@@ -14,6 +15,7 @@ class testApp : public ofBaseApp{
 
 	ofxLytroFileTools lytroFileTools;
 	ofxLytroFileViewer viewer;
+	ofxLytroLibraryParser libraryParser;
 	ofEasyCam camera;
 
 };

@@ -5,12 +5,23 @@
 void testApp::setup()
 {
 	ofSetLogLevel(OF_LOG_VERBOSE);
-	
 	string filePrefix = "IMG_0008";
-	lytroFileTools.splitFile(filePrefix);
 	
-	ofDirectory dataDirectory = ofToDataPath("", true);
-	viewer.setup(dataDirectory, filePrefix);
+	ofFile lfpFile(ofToDataPath(filePrefix+".lfp", true));
+	lytroFileTools.splitFile(lfpFile);
+	
+	ofFile stkFile(ofToDataPath(filePrefix+"-stk.lfp", true));
+	lytroFileTools.splitFile(stkFile);
+	
+	viewer.setup(ofToDataPath("", true), filePrefix);
+	//vector<ofFile> photoSets = libraryParser.getPhotoSets();
+	//libraryParser.parsePhotoSets();
+	/*
+	string filePrefix = "IMG_0012";
+	lytroFileTools.splitFile(filePrefix, "04");
+	
+	ofDirectory dataDirectory = ofToDataPath("04/", true);
+	viewer.setup(dataDirectory, filePrefix);*/
 }
 
 //--------------------------------------------------------------

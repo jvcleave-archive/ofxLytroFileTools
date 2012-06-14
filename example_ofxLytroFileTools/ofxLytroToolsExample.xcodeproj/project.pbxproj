@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035315EC15897DD6007E5A92 /* ofxLytroLibraryParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035315EB15897DD6007E5A92 /* ofxLytroLibraryParser.cpp */; };
 		03586ABC158851A90034B0EB /* ofxLytroFileTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03586AB8158851A90034B0EB /* ofxLytroFileTools.cpp */; };
 		03586ABD158851A90034B0EB /* ofxLytroFileViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03586ABA158851A90034B0EB /* ofxLytroFileViewer.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
@@ -59,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		035315EA15897DD6007E5A92 /* ofxLytroLibraryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLytroLibraryParser.h; sourceTree = "<group>"; };
+		035315EB15897DD6007E5A92 /* ofxLytroLibraryParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLytroLibraryParser.cpp; sourceTree = "<group>"; };
 		03586AB8158851A90034B0EB /* ofxLytroFileTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLytroFileTools.cpp; sourceTree = "<group>"; };
 		03586AB9158851A90034B0EB /* ofxLytroFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLytroFileTools.h; sourceTree = "<group>"; };
 		03586ABA158851A90034B0EB /* ofxLytroFileViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLytroFileViewer.cpp; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				03586AB9158851A90034B0EB /* ofxLytroFileTools.h */,
 				03586ABA158851A90034B0EB /* ofxLytroFileViewer.cpp */,
 				03586ABB158851A90034B0EB /* ofxLytroFileViewer.h */,
+				035315EA15897DD6007E5A92 /* ofxLytroLibraryParser.h */,
+				035315EB15897DD6007E5A92 /* ofxLytroLibraryParser.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				03586ABC158851A90034B0EB /* ofxLytroFileTools.cpp in Sources */,
 				03586ABD158851A90034B0EB /* ofxLytroFileViewer.cpp in Sources */,
+				035315EC15897DD6007E5A92 /* ofxLytroLibraryParser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

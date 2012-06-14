@@ -34,6 +34,13 @@ ofxLytroFileTools::ofxLytroFileTools()
 {
 
 }
+void ofxLytroFileTools::splitFile(ofFile file)
+{
+	fileName  = file.getBaseName();
+	//string fullPathToLFPFile = ofToDataPath(fileName + ".lfp", true);
+	//string fullPathToSTKFile = ofToDataPath(fileName + "-stk.lfp", true);
+	process(file.getAbsolutePath());
+}
 
 LFPSection* ofxLytroFileTools::parseSection(char **lfp, int *in_len)
 {
@@ -178,16 +185,7 @@ void ofxLytroFileTools::parseSections(LFPFile * lfp)
     }
 }
 
-void ofxLytroFileTools::splitFile(string incomingFileName)
-{
-	fileName  = incomingFileName;
-	string fullPathToLFPFile = ofToDataPath(fileName + ".lfp", true);
-	string fullPathToSTKFile = ofToDataPath(fileName + "-stk.lfp", true);
-	process(fullPathToLFPFile);
-	process(fullPathToSTKFile);
-	
-	
-}
+
 
 void ofxLytroFileTools::process(string path)
 {

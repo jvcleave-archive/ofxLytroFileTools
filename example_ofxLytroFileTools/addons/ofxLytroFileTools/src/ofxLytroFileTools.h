@@ -41,7 +41,7 @@ class ofxLytroFileTools
 public:
 	ofxLytroFileTools();
 	string fileName;
-	void splitFile(string incomingFileName);
+	void splitFile(ofFile file);
 	
 private:
 	LFPFile * createLFP(string fullPathToLFPFile);
